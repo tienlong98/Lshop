@@ -1,0 +1,63 @@
+@mixin css-nav-item {
+    color: #7a7a7a;
+    font-size: 1em;
+    margin-right: 2em;
+    font-weight: bold;
+    font-family: cursive;
+    transition: none 86ms ease-out;
+    cursor: pointer;
+}
+
+.menu {
+    .menu-pc {
+        width: 100%;
+        height: 4.5em;
+        background-color: #000000;
+        display: flex;
+        position: relative;
+        .logo {
+            img {
+                width: auto;
+                height: 3.8125em;
+            }
+        }
+        .list-menu {
+            display: flex;
+            line-height: 4.2em;
+            position: absolute;
+            right: 1em;
+            ul {
+                display: flex;
+                list-style-type: none !important;
+                margin-right: 3em;
+                li {
+                    &:first-child {
+                        color: #00cc09 !important;
+                    }
+                    .nav-item {
+                        @include css-nav-item();
+                        &:hover {
+                            color: #00cc09;
+                            text-decoration: none;
+                            border-bottom: 5px #00cc09 solid;
+                            transition: 0.3s;
+                            padding-bottom: 1.2em;
+                        }
+                    }
+                }
+            }
+        }
+        .list-icon {
+            .nav-item {
+                @include css-nav-item();
+                &:hover {
+                    color: #00cc09;
+                    text-decoration: none;
+                }
+            }
+        }
+        .show-hide {
+            display: none;
+        }
+    }
+}
