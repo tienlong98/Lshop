@@ -11,6 +11,7 @@
 .menu .menu-pc .logo img {
   width: auto;
   height: 3.8125em;
+  margin-top: 5px;
 }
 
 .menu .menu-pc .list-menu {
@@ -18,8 +19,7 @@
   display: -ms-flexbox;
   display: flex;
   line-height: 4.2em;
-  position: absolute;
-  right: 1em;
+  margin-left: 2em;
 }
 
 .menu .menu-pc .list-menu ul {
@@ -28,10 +28,6 @@
   display: flex;
   list-style-type: none !important;
   margin-right: 3em;
-}
-
-.menu .menu-pc .list-menu ul li:first-child {
-  color: #00cc09 !important;
 }
 
 .menu .menu-pc .list-menu ul li .nav-item {
@@ -54,6 +50,12 @@
   padding-bottom: 1.2em;
 }
 
+.menu .menu-pc .list-icon {
+  position: absolute;
+  right: 1.5em;
+  line-height: 4.2em;
+}
+
 .menu .menu-pc .list-icon .nav-item {
   color: #7a7a7a;
   font-size: 1em;
@@ -72,5 +74,101 @@
 
 .menu .menu-pc .show-hide {
   display: none;
+  position: absolute;
+  right: 1em;
+  line-height: 2.45em;
+  color: #7a7a7a;
+  font-size: 1.75em;
+}
+
+.menu .menu-pc .nav-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: none;
+  -webkit-animation: fadeIn linear 0.4s;
+          animation: fadeIn linear 0.4s;
+}
+
+.menu .menu-pc .list-menu-mobile {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 28em;
+  max-width: 100%;
+  background-color: #000000;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  opacity: 0;
+  -webkit-transition: opacity linear 0.3s, -webkit-transform linear 0.4s;
+  transition: opacity linear 0.3s, -webkit-transform linear 0.4s;
+  transition: transform linear 0.4s, opacity linear 0.3s;
+  transition: transform linear 0.4s, opacity linear 0.3s, -webkit-transform linear 0.4s;
+}
+
+.menu .menu-pc .list-menu-mobile ul {
+  list-style-type: none;
+}
+
+.menu .menu-pc .list-menu-mobile ul li .nav-item-mobile {
+  text-decoration: none;
+  color: #7a7a7a;
+  font-size: 1.4em;
+  font-weight: bold;
+  font-family: cursive;
+  padding: 0.5em 0;
+}
+
+.menu .menu-pc .list-menu-mobile .nav-mobile-close {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  font-size: 1.4em;
+  color: #7a7a7a;
+}
+
+.menu .menu-pc .nav_input:checked ~ .nav-overlay {
+  display: block;
+}
+
+.menu .menu-pc .nav_input:checked ~ .list-menu-mobile {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  opacity: 1;
+}
+
+@media screen and (max-width: 63.9375em) {
+  .show-hide {
+    display: block !important;
+  }
+  .list-icon {
+    font-size: 1.75em;
+    line-height: 2.45em !important;
+  }
+  .list-menu {
+    display: none !important;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=style.css.map */
