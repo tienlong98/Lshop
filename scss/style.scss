@@ -108,11 +108,176 @@
                 color: #7a7a7a;
             }
         }
+        .css-form-seach {
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.7);
+            transform: translateY(-100%);
+            opacity: 0;
+            transition: transform linear 0.4s, opacity linear 0.3s;
+            .css-title-search {
+                color: #00cc09;
+                text-align: center;
+                position: absolute;
+                top: 35%;
+                left: 50%;
+                transform: translate(-50%, -35%);
+                font-size: 2.5em;
+            }
+            .search-wrapper {
+                position: absolute;
+                transform: translate(-50%, -50%);
+                top: 50%;
+                left: 50%;
+                &.active {}
+                .input-holder {
+                    height: 70px;
+                    width: 70px;
+                    overflow: hidden;
+                    background: rgba(255, 255, 255, 0);
+                    border-radius: 6px;
+                    position: relative;
+                    transition: all 0.3s ease-in-out;
+                }
+                &.active .input-holder {
+                    width: 450px;
+                    border-radius: 50px;
+                    background: rgba(0, 0, 0, 0.5);
+                    transition: all 0.5s cubic-bezier(0, 0.105, 0.035, 1.57);
+                }
+                .input-holder .search-input {
+                    width: 100%;
+                    height: 50px;
+                    padding: 0px 70px 0 20px;
+                    opacity: 0;
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    background: transparent;
+                    box-sizing: border-box;
+                    border: none;
+                    outline: none;
+                    font-family: "Open Sans", Arial, Verdana;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 20px;
+                    color: #FFF;
+                    transform: translate(0, 60px);
+                    transition: all 0.3s cubic-bezier(0, 0.105, 0.035, 1.57);
+                    transition-delay: 0.3s;
+                }
+                &.active .input-holder .search-input {
+                    opacity: 1;
+                    transform: translate(0, 10px);
+                }
+                .input-holder .search-icon {
+                    width: 70px;
+                    height: 70px;
+                    border: none;
+                    border-radius: 6px;
+                    background: #FFF;
+                    padding: 0px;
+                    outline: none;
+                    position: relative;
+                    z-index: 2;
+                    float: right;
+                    cursor: pointer;
+                    transition: all 0.3s ease-in-out;
+                }
+                &.active .input-holder .search-icon {
+                    width: 50px;
+                    height: 50px;
+                    margin: 10px;
+                    border-radius: 30px;
+                }
+                .input-holder .search-icon span {
+                    width: 22px;
+                    height: 22px;
+                    display: inline-block;
+                    vertical-align: middle;
+                    position: relative;
+                    transform: rotate(45deg);
+                    transition: all 0.4s cubic-bezier(0.65, -0.6, 0.24, 1.65);
+                }
+                &.active .input-holder .search-icon span {
+                    transform: rotate(-45deg);
+                }
+                .input-holder .search-icon span {
+                    &::before,
+                    &::after {
+                        position: absolute;
+                        content: '';
+                    }
+                    &::before {
+                        width: 7px;
+                        height: 15px;
+                        left: 10px;
+                        top: 18px;
+                        border-radius: 2px;
+                        background: #00cc09;
+                    }
+                    &::after {
+                        width: 30px;
+                        height: 30px;
+                        left: -3px;
+                        top: -9px;
+                        border-radius: 16px;
+                        border: 4px solid #00cc09;
+                    }
+                }
+                .close {
+                    position: absolute;
+                    z-index: 1;
+                    top: 24px;
+                    right: 20px;
+                    width: 25px;
+                    height: 25px;
+                    cursor: pointer;
+                    transform: rotate(-180deg);
+                    transition: all 0.3s cubic-bezier(0.285, -0.45, 0.935, 0.11);
+                    transition-delay: 0.2s;
+                }
+                &.active .close {
+                    right: -50px;
+                    transform: rotate(45deg);
+                    transition: all 0.6s cubic-bezier(0, 0.105, 0.035, 1.57);
+                    transition-delay: 0.5s;
+                }
+                .close {
+                    &::before,
+                    &::after {
+                        position: absolute;
+                        content: '';
+                        background: #00cc09;
+                        border-radius: 2px;
+                    }
+                    &::before {
+                        width: 5px;
+                        height: 25px;
+                        left: 10px;
+                        top: 0px;
+                    }
+                    &::after {
+                        width: 25px;
+                        height: 5px;
+                        left: 0px;
+                        top: 10px;
+                    }
+                }
+            }
+        }
         .nav_input:checked~.nav-overlay {
             display: block;
         }
         .nav_input:checked~.list-menu-mobile {
             transform: translateX(0%);
+            opacity: 1;
+        }
+        .nav-seach:checked~.css-form-seach {
+            transform: translateY(0%);
             opacity: 1;
         }
     }
@@ -133,7 +298,14 @@
 
 @media only screen and (max-width: 46.1875em) {}
 
-@media screen and (min-width:46.25em) and (max-width:63.9375em) {}
+@media only screen and (min-width:46.25em) and (max-width:63.9375em) {
+    .css-title-search {
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -40%);
+        font-size: 2em;
+    }
+}
 
 @keyframes fadeIn {
     from {

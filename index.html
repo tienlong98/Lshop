@@ -58,8 +58,24 @@
                 </ul>
             </div>
             <div class="list-icon ">
-                <a class="nav-item" href=""><i class="fas fa-search"></i></a>
-                <a class="nav-item" href=""><i class="fas fa-shopping-bag"></i></a>
+                <label for="nav-form-search" class="nav-item"><i class="fas fa-search"></i></label>
+                <a class="nav-item"><i class="fas fa-shopping-bag"></i></a>
+            </div>
+            <input type="checkbox" hidden name="" id="nav-form-search" class="nav-seach">
+            <div class="css-form-seach">
+                <!--<label for="nav-form-search" class="nav-seach-close">
+                    <i class="fas fa-times"></i>
+                </label>-->
+                <h1 class="css-title-search">WHAT ARE YOU LOOKING FOR ?</h1>
+                <div class="search-wrapper">
+
+                    <div class="input-holder">
+
+                        <input type="text" class="search-input" placeholder="Type to search" />
+                        <button class="search-icon" onclick="searchToggle(this, event);"><span></span></button>
+                    </div>
+                    <label for="nav-form-search"><span class="close" onclick="searchToggle(this, event);"></span></label>
+                </div>
             </div>
             <label for="nav-id-input" class="show-hide">
                 <i class="fas fa-bars"></i>
@@ -115,6 +131,19 @@
         </div>
     </div>
     <div class="footer"></div>
+    <script>
+        function searchToggle(obj, evt) {
+            var container = $(obj).closest('.search-wrapper');
+            if (!container.hasClass('active')) {
+                container.addClass('active');
+                evt.preventDefault();
+            } else if (container.hasClass('active') && $(obj).closest('.input-holder').length == 0) {
+                container.removeClass('active');
+                // clear input
+                container.find('.search-input').val('');
+            }
+        }
+    </script>
 </body>
 
 </html>
