@@ -283,6 +283,28 @@
     }
 }
 
+.footer {
+    .line {
+        background-color: rgba(244, 231, 224, 0.95);
+        height: 1px;
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+    margin-top: 500px;
+    .red {
+        background-color: red;
+    }
+    .blue {
+        background-color: aqua;
+    }
+    .black {
+        background-color: #000000;
+    }
+    .height {
+        height: 200px;
+    }
+}
+
 @media screen and (max-width:63.9375em) {
     .show-hide {
         display: block !important;
