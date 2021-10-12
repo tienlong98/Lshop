@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
 .menu {
   position: fixed;
   background-color: transparent;
@@ -141,6 +142,106 @@
   background-color: #ad967c;
   height: 100vh;
   width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home .content1 .content {
+  margin-top: 30%;
+  margin-left: 25%;
+  margin-right: 15px;
+}
+
+.home .content1 .content p {
+  margin-bottom: 50px;
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 500;
+  letter-spacing: 1.1px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.home .content1 .content a {
+  margin-top: 35px;
+  color: #3c3834;
+  background-color: #ffffff;
+  letter-spacing: 0.12em;
+  padding: 15px 35px;
+  cursor: pointer;
+  border: 1px solid #3c3834;
+  -webkit-box-shadow: 0px 0px 0 1px #ffffff, 3px 3px 0 0 #000000;
+          box-shadow: 0px 0px 0 1px #ffffff, 3px 3px 0 0 #000000;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.home .content1 .content a:hover {
+  background-color: #000000;
+}
+
+.home .content1 .content a:hover span {
+  color: white;
+}
+
+.home .content1 .content a span {
+  color: #3c3834;
+}
+
+.home .content1 .social-container {
+  position: absolute;
+  left: 40px;
+  bottom: 30%;
+}
+
+.home .content1 .social-container .social-icons {
+  list-style: none;
+}
+
+.home .content1 .social-container .social-icons::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 1px;
+  height: 130px;
+  top: -150px;
+  left: 8px;
+  background-color: #000000b0;
+}
+
+.home .content1 .social-container .social-icons::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 1px;
+  height: 130px;
+  bottom: -150px;
+  left: 8px;
+  background-color: #000000b0;
+}
+
+.home .content1 .social-container .social-icons li {
+  margin: 35px 0;
+}
+
+.home .content1 .social-container .social-icons li a i {
+  color: rgba(255, 255, 255, 0.77);
+  font-size: 20px;
+}
+
+.home .content1 .social-container .social-icons li a:hover i {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  color: #846445;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
 }
 
 .home .content2 {
@@ -150,6 +251,21 @@
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url(../images/4.jpg);
   background-position: center;
   background-size: cover;
+}
+
+.home .content2 h1 {
+  position: absolute;
+  left: 200px;
+  top: 240px;
+  font-size: 80px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  color: #000;
+  letter-spacing: 8px;
+}
+
+.home .content2 h1 span {
+  color: #fff;
 }
 
 @media screen and (max-width: 63.9375em) {

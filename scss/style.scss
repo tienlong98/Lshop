@@ -1,4 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+@mixin button {
+    color: #3c3834;
+    background-color: #ffffff;
+    letter-spacing: 0.12em;
+    padding: 15px 35px;
+    cursor: pointer;
+    border: 1px solid #3c3834;
+    box-shadow: 0px 0px 0 1px #ffffff, 3px 3px 0 0 #000000;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    &:hover {
+        background-color: #000000;
+        span {
+            color: white;
+        }
+    }
+}
+
 .menu {
     position: fixed;
     background-color: transparent;
@@ -112,6 +132,73 @@
         background-color: #ad967c;
         height: 100vh;
         width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .content {
+            margin-top: 30%;
+            margin-left: 25%;
+            margin-right: 15px;
+            p {
+                margin-bottom: 50px;
+                font-size: 15px;
+                line-height: 25px;
+                font-weight: 500;
+                letter-spacing: 1.1px;
+                font-family: 'Raleway', sans-serif;
+            }
+            a {
+                margin-top: 35px;
+                @include button();
+                span {
+                    color: #3c3834;
+                }
+            }
+        }
+        .social-container {
+            position: absolute;
+            left: 40px;
+            bottom: 30%;
+            .social-icons {
+                list-style: none;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    display: block;
+                    width: 1px;
+                    height: 130px;
+                    top: -150px;
+                    left: 8px;
+                    background-color: #000000b0;
+                }
+                &::after {
+                    content: '';
+                    position: absolute;
+                    display: block;
+                    width: 1px;
+                    height: 130px;
+                    bottom: -150px;
+                    left: 8px;
+                    background-color: #000000b0;
+                }
+                li {
+                    margin: 35px 0;
+                    a {
+                        i {
+                            color: rgba(255, 255, 255, 0.77);
+                            font-size: 20px;
+                        }
+                        &:hover {
+                            i {
+                                transform: scale(1.5);
+                                color: #846445;
+                                transition: all .2s ease-in-out;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
     .content2 {
         height: 100vh;
@@ -119,6 +206,19 @@
         background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url(../images/4.jpg);
         background-position: center;
         background-size: cover;
+        h1 {
+            position: absolute;
+            left: 200px;
+            top: 240px;
+            font-size: 80px;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 500;
+            color: #000;
+            letter-spacing: 8px;
+            span {
+                color: #fff;
+            }
+        }
     }
 }
 
