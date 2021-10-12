@@ -81,7 +81,7 @@
   right: 1em;
   line-height: 2.45em;
   color: whitesmoke;
-  font-size: 1.75em;
+  font-size: 1.5em;
 }
 
 .menu .menu-pc .list-menu-mobile {
@@ -145,18 +145,16 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
 .home .content1 .content {
-  margin-top: 30%;
-  margin-left: 25%;
-  margin-right: 15px;
+  margin-top: 14%;
+  position: absolute;
+  width: 445px;
+  left: 150px;
 }
 
 .home .content1 .content p {
@@ -268,26 +266,48 @@
   color: #fff;
 }
 
-@media screen and (max-width: 63.9375em) {
+@media screen and (max-width: 62em) {
   .show-hide {
     display: block !important;
-  }
-  .list-icon {
-    font-size: 1.75em;
-    line-height: 2.45em !important;
   }
   .list-menu {
     display: none !important;
   }
 }
 
-@media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
-  .css-title-search {
-    top: 40%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -40%);
-            transform: translate(-50%, -40%);
-    font-size: 2em;
+@media only screen and (max-width: 48em) {
+  .home .content1 .content {
+    margin-top: 5%;
+    left: 20%;
+  }
+  .home .content1 .content p {
+    color: #ffffff;
+  }
+  .home .content2 h1 {
+    font-size: 60px;
+    left: 20%;
+  }
+}
+
+@media only screen and (max-width: 36em) {
+  .home .content1 .content {
+    margin-top: 0px;
+    width: 300px;
+    left: 15%;
+  }
+  .home .content1 .content p {
+    color: #ffffff;
+  }
+  .home .content1 .content a {
+    font-size: 11px;
+    padding: 10px 25px;
+  }
+  .home .content1 .social-container {
+    left: 15px;
+  }
+  .home .content2 h1 {
+    font-size: 30px;
+    left: 15%;
   }
 }
 
