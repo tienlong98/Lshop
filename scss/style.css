@@ -171,7 +171,7 @@
   color: #3c3834;
   background-color: #ffffff;
   letter-spacing: 0.12em;
-  padding: 15px 35px;
+  padding: 11px 35px;
   cursor: pointer;
   border: 1px solid #3c3834;
   -webkit-box-shadow: 0px 0px 0 1px #ffffff, 3px 3px 0 0 #000000;
@@ -183,9 +183,6 @@
 
 .home .content1 .content a:hover {
   background-color: #000000;
-}
-
-.home .content1 .content a:hover span {
   color: white;
 }
 
@@ -266,6 +263,89 @@
   color: #fff;
 }
 
+.about {
+  background-color: #fef7f5;
+  height: 80vh;
+}
+
+.about .about-content {
+  text-align: center;
+}
+
+.about .about-content .about-title {
+  margin-bottom: 50px;
+}
+
+.about .about-content .naiyo {
+  margin-bottom: 50px;
+}
+
+.about .about-content .button-about {
+  color: #3c3834;
+  background-color: #ffffff;
+  letter-spacing: 0.12em;
+  padding: 11px 35px;
+  cursor: pointer;
+  border: 1px solid #3c3834;
+  -webkit-box-shadow: 0px 0px 0 1px #ffffff, 3px 3px 0 0 #000000;
+          box-shadow: 0px 0px 0 1px #ffffff, 3px 3px 0 0 #000000;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.about .about-content .button-about:hover {
+  background-color: #000000;
+  color: white;
+}
+
+.content-product {
+  background-image: url(../images/bg-home.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.content-product .content-left {
+  text-align: center;
+  padding: 45px;
+}
+
+.content-product .content-left .title-content-product {
+  color: #3c3834;
+  font-size: 28px;
+  line-height: 40px;
+  letter-spacing: 0.15em;
+  margin-bottom: 50px;
+}
+
+.content-product .content-left .text-content-product {
+  margin-bottom: 50px;
+}
+
+.content-product .content-left .button-content-product {
+  color: #3c3834;
+  background-color: #ffffff;
+  letter-spacing: 0.12em;
+  padding: 11px 35px;
+  cursor: pointer;
+  border: 1px solid #3c3834;
+  -webkit-box-shadow: 0px 0px 0 1px #ffffff, 3px 3px 0 0 #000000;
+          box-shadow: 0px 0px 0 1px #ffffff, 3px 3px 0 0 #000000;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.content-product .content-left .button-content-product:hover {
+  background-color: #000000;
+  color: white;
+}
+
+.content-product .content-right {
+  text-align: center;
+}
+
 @media screen and (max-width: 62em) {
   .show-hide {
     display: block !important;
@@ -308,6 +388,89 @@
   .home .content2 h1 {
     font-size: 30px;
     left: 15%;
+  }
+}
+
+.best-product {
+  background-image: url(../images/bg-home-2.png);
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.best-product .best-pc {
+  margin-top: 150px;
+  margin-bottom: 100px;
+  font-size: 42px;
+  line-height: 50px;
+}
+
+.best-product .item {
+  margin-bottom: 100px;
+}
+
+.best-product .item .css-img {
+  overflow: hidden;
+}
+
+.best-product .item .css-img a img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.best-product .item .css-img a:hover img {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.best-product .item .content-item {
+  color: #a7896a;
+}
+
+.best-product .item .content-item .danhgia {
+  font-size: 15px;
+  padding-top: 15px;
+}
+
+.best-product .item .content-item .tensp {
+  padding-top: 10px;
+  color: #000000 !important;
+  font-weight: 600;
+}
+
+.best-product .item .content-item .giasp {
+  font-size: 20px;
+  display: block;
+}
+
+.best-product .item .content-item .themgiohang {
+  display: none;
+  text-decoration: none;
+  color: #a7896a;
+  font-size: 20px;
+}
+
+.best-product .item:hover .content-item .themgiohang {
+  display: block;
+}
+
+.best-product .item:hover .content-item .giasp {
+  display: none;
+}
+
+@media only screen and (min-width: 48em) and (max-width: 62em) {
+  .content-product .content-left {
+    padding: 5px;
+  }
+  .content-product .content-left .title-content-product {
+    font-size: 22px;
+    letter-spacing: 0.1em;
+    margin-bottom: 25px;
+  }
+  .content-product .content-right img {
+    width: 90%;
   }
 }
 
