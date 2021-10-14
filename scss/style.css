@@ -344,7 +344,16 @@
 }
 
 .footer {
+  background-color: #f4e7e0;
   margin-top: 500px;
+}
+.footer_logo_img{
+  padding-top: 84px;
+  padding-bottom: 46px;
+  text-align: center;
+}
+.footer_text_content{
+  text-align: center;
 }
 
 .footer .line {

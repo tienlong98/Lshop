@@ -284,11 +284,18 @@
 }
 
 .footer {
+    .footer_logo{
+        text-align: center;
+    }
+    .container{
+        position: relative;
+    }
     .line {
         background-color: rgba(244, 231, 224, 0.95);
         height: 1px;
         margin-bottom: 50px;
         margin-top: 50px;
+        position: absolute;
     }
     margin-top: 500px;
     .red {
