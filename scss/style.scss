@@ -383,6 +383,66 @@
     }
 }
 
+.slide-birthday {
+    background-color: #fef7f5;
+    .title-slide {
+        font-size: 42px;
+        margin-top: 150px;
+        margin-bottom: 100px;
+    }
+    .slide-hana {
+        margin-bottom: 70px;
+    }
+}
+
+.bosuutap {
+    background-image: url(../images/bg-home.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    img {
+        height: 65vh;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    .title-bst {
+        font-size: 38px;
+        line-height: 50px;
+        padding-bottom: 30px;
+    }
+    .naiyo {
+        color: #544e48;
+        font-size: 20px;
+        line-height: 28px;
+        padding-bottom: 40px;
+    }
+    .button-bst {
+        @include button();
+    }
+}
+
+.follow {
+    background-image: url(../images/bg-home-2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    .title-fl {
+        color: #3c3834;
+        font-size: 42px;
+        line-height: 56px;
+        margin-top: 150px;
+        margin-bottom: 20px;
+        padding: 0px 200px;
+    }
+    .text-fl {
+        margin-bottom: 50px;
+        span {
+            color: #a7896a;
+        }
+    }
+}
+
 @media only screen and (min-width:48em) and (max-width:62em) {
     .content-product {
         .content-left {
