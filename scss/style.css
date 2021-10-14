@@ -1,5 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+.mauden {
+  color: #000000 !important;
+}
+
+.maudennhat {
+  color: #3c3834 !important;
+}
+
 .menu {
   position: fixed;
   background-color: transparent;
@@ -32,6 +40,7 @@
   font-family: 'Great Vibes', cursive;
   color: #fff;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .menu .menu-pc .logo span {
@@ -148,6 +157,7 @@
 .change-menu {
   background-color: #ffffff;
   padding: 15px 0;
+  border-bottom: 1px solid #f4e7e0;
 }
 
 .change-menu .menu-pc {
@@ -551,6 +561,117 @@
 
 .follow .text-fl span {
   color: #a7896a;
+}
+
+.home-shop .title-shop {
+  margin-top: 150px;
+}
+
+.home-shop .text-shop span {
+  color: #a7896a;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: #f4e7e0;
+  margin-top: 20px;
+}
+
+.content-shop .filter .css-border {
+  border: 1px solid #f4e7e0;
+}
+
+.content-shop .item {
+  margin-top: 50px;
+  margin-bottom: 0px !important;
+  margin-bottom: 100px;
+}
+
+.content-shop .item .css-img {
+  overflow: hidden;
+}
+
+.content-shop .item .css-img a img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.content-shop .item .css-img a:hover img {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.content-shop .item .content-item {
+  color: #a7896a;
+}
+
+.content-shop .item .content-item .danhgia {
+  font-size: 15px;
+  padding-top: 15px;
+}
+
+.content-shop .item .content-item .tensp {
+  padding-top: 10px;
+  color: #000000 !important;
+  font-weight: 600;
+}
+
+.content-shop .item .content-item .giasp {
+  font-size: 20px;
+  display: block;
+}
+
+.content-shop .item .content-item .themgiohang {
+  display: none;
+  text-decoration: none;
+  color: #a7896a;
+  font-size: 20px;
+}
+
+.content-shop .item:hover .content-item .themgiohang {
+  display: block;
+}
+
+.content-shop .item:hover .content-item .giasp {
+  display: none;
+}
+
+.content-shop .danhmuc-hoa {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: normal;
+  font-style: normal;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.12em;
+}
+
+.content-shop ul {
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
+}
+
+.content-shop ul .css-dmh {
+  border-top: 1px solid #f4e7e0;
+  padding: 10px 0;
+  list-style: none;
+}
+
+.content-shop ul .css-dmh .name-dm {
+  color: #3c3834;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 600;
+  font-style: normal;
+  text-transform: none;
+  text-decoration: none;
+}
+
+.content-shop ul .fix-bd-1 {
+  border: none;
 }
 
 @media screen and (max-width: 75em) {

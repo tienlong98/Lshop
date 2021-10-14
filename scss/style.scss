@@ -17,6 +17,64 @@
     }
 }
 
+@mixin sanpham {
+    margin-bottom: 100px;
+    .css-img {
+        overflow: hidden;
+        a {
+            img {
+                object-fit: cover;
+                object-position: center;
+            }
+            &:hover {
+                img {
+                    transform: scale(1.5);
+                }
+            }
+        }
+    }
+    .content-item {
+        color: #a7896a;
+        .danhgia {
+            font-size: 15px;
+            padding-top: 15px;
+        }
+        .tensp {
+            padding-top: 10px;
+            color: #000000 !important;
+            font-weight: 600;
+        }
+        .giasp {
+            font-size: 20px;
+            display: block;
+        }
+        .themgiohang {
+            display: none;
+            text-decoration: none;
+            color: #a7896a;
+            font-size: 20px;
+        }
+    }
+    &:hover {
+        .content-item {
+            .themgiohang {
+                display: block;
+            }
+            .giasp {
+                display: none;
+            }
+        }
+    }
+}
+
+.mauden {
+    color: #000000 !important;
+}
+
+.maudennhat {
+    color: #3c3834 !important;
+}
+
 .menu {
     position: fixed;
     background-color: transparent;
@@ -39,6 +97,7 @@
             font-family: 'Great Vibes', cursive;
             color: #fff;
             cursor: pointer;
+            text-decoration: none;
             span {
                 font-size: 38px;
                 color: #9a533d;
@@ -135,6 +194,7 @@
 .change-menu {
     background-color: #ffffff;
     padding: 15px 0;
+    border-bottom: 1px solid #f4e7e0;
     .menu-pc {
         margin: 10;
         .logo {
@@ -317,53 +377,7 @@
         line-height: 50px;
     }
     .item {
-        margin-bottom: 100px;
-        .css-img {
-            overflow: hidden;
-            a {
-                img {
-                    object-fit: cover;
-                    object-position: center;
-                }
-                &:hover {
-                    img {
-                        transform: scale(1.5);
-                    }
-                }
-            }
-        }
-        .content-item {
-            color: #a7896a;
-            .danhgia {
-                font-size: 15px;
-                padding-top: 15px;
-            }
-            .tensp {
-                padding-top: 10px;
-                color: #000000 !important;
-                font-weight: 600;
-            }
-            .giasp {
-                font-size: 20px;
-                display: block;
-            }
-            .themgiohang {
-                display: none;
-                text-decoration: none;
-                color: #a7896a;
-                font-size: 20px;
-            }
-        }
-        &:hover {
-            .content-item {
-                .themgiohang {
-                    display: block;
-                }
-                .giasp {
-                    display: none;
-                }
-            }
-        }
+        @include sanpham();
     }
 }
 
@@ -423,6 +437,66 @@
         margin-bottom: 50px;
         span {
             color: #a7896a;
+        }
+    }
+}
+
+.home-shop {
+    .title-shop {
+        margin-top: 150px;
+    }
+    .text-shop {
+        span {
+            color: #a7896a;
+        }
+    }
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: #f4e7e0;
+    margin-top: 20px;
+}
+
+.content-shop {
+    .filter {
+        .css-border {
+            border: 1px solid #f4e7e0;
+        }
+    }
+    .item {
+        margin-top: 50px;
+        margin-bottom: 0px !important;
+        @include sanpham();
+    }
+    .danhmuc-hoa {
+        font-size: 16px;
+        line-height: 22px;
+        font-weight: normal;
+        font-style: normal;
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 0.12em;
+    }
+    ul {
+        padding-inline-start: 0px;
+        .css-dmh {
+            border-top: 1px solid #f4e7e0;
+            padding: 10px 0;
+            list-style: none;
+            .name-dm {
+                color: #3c3834;
+                font-size: 15px;
+                line-height: 24px;
+                font-weight: 600;
+                font-style: normal;
+                text-transform: none;
+                text-decoration: none;
+            }
+        }
+        .fix-bd-1 {
+            border: none;
         }
     }
 }
