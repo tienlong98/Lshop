@@ -75,6 +75,18 @@
   width: 100%;
 }
 
+.menu .menu-pc .list-icon ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.menu .menu-pc .list-icon ul a {
+  color: whitesmoke;
+  padding: 0 15px;
+}
+
 .menu .menu-pc .show-hide {
   display: none;
   position: absolute;
@@ -86,11 +98,10 @@
 
 .menu .menu-pc .list-menu-mobile {
   position: fixed;
-  top: 0;
+  top: 50px;
   right: 0;
-  bottom: 0;
   width: 100%;
-  background-color: #ad967c;
+  background-color: #ffffff;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
   opacity: 0;
@@ -104,12 +115,15 @@
   list-style-type: none;
 }
 
+.menu .menu-pc .list-menu-mobile ul li {
+  padding-bottom: 15px;
+}
+
 .menu .menu-pc .list-menu-mobile ul li .nav-item-mobile {
   text-decoration: none;
-  color: whitesmoke;
+  color: #3c3834;
   font-size: 1.4em;
-  font-weight: bold;
-  font-family: cursive;
+  font-weight: 500;
   padding: 0.5em 0;
 }
 
@@ -118,7 +132,7 @@
   top: 1em;
   right: 1em;
   font-size: 1.4em;
-  color: whitesmoke;
+  color: #3c3834;
 }
 
 .menu .menu-pc .nav_input:checked ~ .nav-overlay {
@@ -129,6 +143,44 @@
   -webkit-transform: translateX(0%);
           transform: translateX(0%);
   opacity: 1;
+}
+
+.change-menu {
+  background-color: #ffffff;
+  padding: 15px 0;
+}
+
+.change-menu .menu-pc {
+  margin: 10;
+}
+
+.change-menu .menu-pc .logo {
+  color: #544e48;
+}
+
+.change-menu .menu-pc .list-menu ul {
+  margin-bottom: 0;
+}
+
+.change-menu .menu-pc .list-menu ul a {
+  color: #544e48;
+}
+
+.change-menu .menu-pc .list-icon {
+  margin-right: 15px;
+  margin-bottom: 5px;
+}
+
+.change-menu .menu-pc .list-icon ul {
+  margin-bottom: 0;
+}
+
+.change-menu .menu-pc .list-icon ul a {
+  color: #544e48;
+}
+
+.change-menu .menu-pc .show-hide {
+  color: #544e48;
 }
 
 .home {
@@ -511,12 +563,6 @@
   .follow .title-fl {
     padding: 0px;
   }
-  .show-hide {
-    display: block !important;
-  }
-  .list-menu {
-    display: none !important;
-  }
 }
 
 @media only screen and (max-width: 48em) {
@@ -533,6 +579,12 @@
   }
   .follow .title-fl {
     padding: 0 40px;
+  }
+  .show-hide {
+    display: block !important;
+  }
+  .list-menu {
+    display: none !important;
   }
 }
 

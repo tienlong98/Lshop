@@ -74,6 +74,16 @@
                 }
             }
         }
+        .list-icon {
+            ul {
+                display: flex;
+                list-style: none;
+                a {
+                    color: whitesmoke;
+                    padding: 0 15px;
+                }
+            }
+        }
         .show-hide {
             display: none;
             position: absolute;
@@ -84,23 +94,22 @@
         }
         .list-menu-mobile {
             position: fixed;
-            top: 0;
+            top: 50px;
             right: 0;
-            bottom: 0;
             width: 100%;
-            background-color: #ad967c;
+            background-color: #ffffff;
             transform: translateX(100%);
             opacity: 0;
             transition: transform linear 0.4s, opacity linear 0.3s;
             ul {
                 list-style-type: none;
                 li {
+                    padding-bottom: 15px;
                     .nav-item-mobile {
                         text-decoration: none;
-                        color: whitesmoke;
+                        color: #3c3834;
                         font-size: 1.4em;
-                        font-weight: bold;
-                        font-family: cursive;
+                        font-weight: 500;
                         padding: 0.5em 0;
                     }
                 }
@@ -110,7 +119,7 @@
                 top: 1em;
                 right: 1em;
                 font-size: 1.4em;
-                color: whitesmoke;
+                color: #3c3834;
             }
         }
         .nav_input:checked~.nav-overlay {
@@ -119,6 +128,38 @@
         .nav_input:checked~.list-menu-mobile {
             transform: translateX(0%);
             opacity: 1;
+        }
+    }
+}
+
+.change-menu {
+    background-color: #ffffff;
+    padding: 15px 0;
+    .menu-pc {
+        margin: 10;
+        .logo {
+            color: #544e48;
+        }
+        .list-menu {
+            ul {
+                margin-bottom: 0;
+                a {
+                    color: #544e48;
+                }
+            }
+        }
+        .list-icon {
+            margin-right: 15px;
+            margin-bottom: 5px;
+            ul {
+                margin-bottom: 0;
+                a {
+                    color: #544e48;
+                }
+            }
+        }
+        .show-hide {
+            color: #544e48;
         }
     }
 }
@@ -400,12 +441,6 @@
             padding: 0px;
         }
     }
-    .show-hide {
-        display: block !important;
-    }
-    .list-menu {
-        display: none !important;
-    }
 }
 
 @media only screen and (max-width: 48em) {
@@ -430,6 +465,12 @@
         .title-fl {
             padding: 0 40px;
         }
+    }
+    .show-hide {
+        display: block !important;
+    }
+    .list-menu {
+        display: none !important;
     }
 }
 
