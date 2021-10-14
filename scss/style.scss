@@ -264,63 +264,6 @@
     }
 }
 
-@media screen and (max-width:62em) {
-    .show-hide {
-        display: block !important;
-    }
-    .list-menu {
-        display: none !important;
-    }
-}
-
-@media only screen and (max-width: 48em) {
-    .home {
-        .content1 {
-            .content {
-                margin-top: 5%;
-                left: 20%;
-                p {
-                    color: #ffffff;
-                }
-            }
-        }
-        .content2 {
-            h1 {
-                font-size: 60px;
-                left: 20%;
-            }
-        }
-    }
-}
-
-@media only screen and (max-width: 36em) {
-    .home {
-        .content1 {
-            .content {
-                margin-top: 0px;
-                width: 300px;
-                left: 15%;
-                p {
-                    color: #ffffff;
-                }
-                a {
-                    font-size: 11px;
-                    padding: 10px 25px;
-                }
-            }
-            .social-container {
-                left: 15px;
-            }
-        }
-        .content2 {
-            h1 {
-                font-size: 30px;
-                left: 15%;
-            }
-        }
-    }
-}
-
 .best-product {
     background-image: url(../images/bg-home-2.png);
     background-position: bottom center;
@@ -439,6 +382,86 @@
         margin-bottom: 50px;
         span {
             color: #a7896a;
+        }
+    }
+}
+
+@media screen and (max-width:75em) {
+    .follow {
+        .title-fl {
+            padding: 0 100px;
+        }
+    }
+}
+
+@media screen and (max-width:62em) {
+    .follow {
+        .title-fl {
+            padding: 0px;
+        }
+    }
+    .show-hide {
+        display: block !important;
+    }
+    .list-menu {
+        display: none !important;
+    }
+}
+
+@media only screen and (max-width: 48em) {
+    .home {
+        .content1 {
+            .content {
+                margin-top: 5%;
+                left: 20%;
+                p {
+                    color: #ffffff;
+                }
+            }
+        }
+        .content2 {
+            h1 {
+                font-size: 60px;
+                left: 20%;
+            }
+        }
+    }
+    .follow {
+        .title-fl {
+            padding: 0 40px;
+        }
+    }
+}
+
+@media only screen and (max-width: 36em) {
+    .home {
+        .content1 {
+            .content {
+                margin-top: 0px;
+                width: 300px;
+                left: 15%;
+                p {
+                    color: #ffffff;
+                }
+                a {
+                    font-size: 11px;
+                    padding: 10px 25px;
+                }
+            }
+            .social-container {
+                left: 15px;
+            }
+        }
+        .content2 {
+            h1 {
+                font-size: 30px;
+                left: 15%;
+            }
+        }
+    }
+    .follow {
+        .title-fl {
+            padding: 0px 10px;
         }
     }
 }
