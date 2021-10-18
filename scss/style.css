@@ -674,6 +674,118 @@
   border: none;
 }
 
+.footer {
+  background-image: url(../images/bg-home.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footer .logo {
+  margin-top: 50px;
+  font-size: 30px;
+  letter-spacing: 3px;
+  font-weight: 500;
+  font-family: 'Great Vibes', cursive;
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+  color: #000000;
+  font-size: 50px;
+}
+
+.footer .logo span {
+  font-size: 38px;
+  color: #9a533d;
+}
+
+.footer .text-footer {
+  color: #544e48;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: 0;
+}
+
+.footer .subscribe input {
+  border: 1px solid #f4e7e0;
+  width: 32%;
+  padding: 7px;
+}
+
+.footer .subscribe .buttun-subscribe {
+  color: #3c3834;
+  background-color: #ffffff;
+  letter-spacing: 0.12em;
+  padding: 11px 35px;
+  cursor: pointer;
+  border: 1px solid #3c3834;
+  -webkit-box-shadow: 0px 0px 0 1px #ffffff, 3px 3px 0 0 #000000;
+          box-shadow: 0px 0px 0 1px #ffffff, 3px 3px 0 0 #000000;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.footer .subscribe .buttun-subscribe:hover {
+  background-color: #000000;
+  color: white;
+}
+
+.footer .menu-footer ul {
+  list-style: none;
+}
+
+.footer .menu-footer ul li {
+  margin: 0 20px;
+}
+
+.footer .menu-footer ul li a {
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 500;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.156em;
+  color: #211f1f;
+  text-decoration: none;
+}
+
+.footer .menu-footer ul li a:hover {
+  color: #a7896a;
+}
+
+.footer .icon-sns ul {
+  list-style: none;
+}
+
+.footer .icon-sns ul li {
+  margin: 0 20px;
+}
+
+.footer .icon-sns ul li a {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 500;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.156em;
+  color: #211f1f;
+}
+
+.footer .icon-sns ul li a:hover {
+  color: #a7896a;
+}
+
+.footer .copyright {
+  color: #211f1f;
+}
+
+.footer .copyright .tennhom {
+  font-weight: 600;
+}
+
 @media screen and (max-width: 75em) {
   .follow .title-fl {
     padding: 0 100px;
@@ -683,6 +795,19 @@
 @media screen and (max-width: 62em) {
   .follow .title-fl {
     padding: 0px;
+  }
+  .footer .subscribe input {
+    width: 75%;
+    margin-bottom: 30px;
+  }
+  .footer .subscribe .buttun-subscribe {
+    margin-bottom: 30px;
+  }
+  .footer .menu-footer ul li {
+    margin: 0 15px;
+  }
+  .footer .menu-footer ul li a {
+    font-size: 12px;
   }
 }
 
@@ -731,6 +856,12 @@
   }
   .follow .title-fl {
     padding: 0px 10px;
+  }
+  .footer .menu-footer ul li {
+    margin: 0 5px;
+  }
+  .footer .menu-footer ul li a {
+    font-size: 10px;
   }
 }
 
