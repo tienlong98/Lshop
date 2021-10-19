@@ -17,6 +17,20 @@
     }
 }
 
+@mixin logo {
+    font-size: 30px;
+    letter-spacing: 3px;
+    font-weight: 500;
+    font-family: 'Great Vibes', cursive;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    span {
+        font-size: 38px;
+        color: #9a533d;
+    }
+}
+
 @mixin sanpham {
     margin-bottom: 100px;
     .css-img {
@@ -91,17 +105,7 @@
         align-items: center;
         justify-content: space-between;
         .logo {
-            font-size: 30px;
-            letter-spacing: 3px;
-            font-weight: 500;
-            font-family: 'Great Vibes', cursive;
-            color: #fff;
-            cursor: pointer;
-            text-decoration: none;
-            span {
-                font-size: 38px;
-                color: #9a533d;
-            }
+            @include logo();
         }
         .list-menu {
             ul {
@@ -501,6 +505,84 @@
     }
 }
 
+.footer {
+    background-image: url(../images/bg-home.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .logo {
+        margin-top: 50px;
+        @include logo();
+        color: #000000;
+        font-size: 50px;
+    }
+    .text-footer {
+        color: #544e48;
+        font-size: 17px;
+        line-height: 24px;
+        font-weight: 300;
+        font-style: normal;
+        letter-spacing: 0;
+    }
+    .subscribe {
+        input {
+            border: 1px solid #f4e7e0;
+            width: 32%;
+            padding: 7px;
+        }
+        .buttun-subscribe {
+            @include button();
+        }
+    }
+    .menu-footer {
+        ul {
+            list-style: none;
+            li {
+                margin: 0 20px;
+                a {
+                    font-size: 13px;
+                    line-height: 24px;
+                    font-weight: 500;
+                    font-style: normal;
+                    text-transform: uppercase;
+                    letter-spacing: 0.156em;
+                    color: #211f1f;
+                    text-decoration: none;
+                    &:hover {
+                        color: #a7896a;
+                    }
+                }
+            }
+        }
+    }
+    .icon-sns {
+        ul {
+            list-style: none;
+            li {
+                margin: 0 20px;
+                a {
+                    font-size: 18px;
+                    line-height: 24px;
+                    font-weight: 500;
+                    font-style: normal;
+                    text-transform: uppercase;
+                    letter-spacing: 0.156em;
+                    color: #211f1f;
+                    &:hover {
+                        color: #a7896a;
+                    }
+                }
+            }
+        }
+    }
+    .copyright {
+        color: #211f1f;
+        .tennhom {
+            font-weight: 600;
+        }
+    }
+}
+
 @media screen and (max-width:75em) {
     .follow {
         .title-fl {
@@ -513,6 +595,27 @@
     .follow {
         .title-fl {
             padding: 0px;
+        }
+    }
+    .footer {
+        .subscribe {
+            input {
+                width: 75%;
+                margin-bottom: 30px;
+            }
+            .buttun-subscribe {
+                margin-bottom: 30px;
+            }
+        }
+        .menu-footer {
+            ul {
+                li {
+                    margin: 0 15px;
+                    a {
+                        font-size: 12px;
+                    }
+                }
+            }
         }
     }
 }
@@ -577,6 +680,18 @@
     .follow {
         .title-fl {
             padding: 0px 10px;
+        }
+    }
+    .footer {
+        .menu-footer {
+            ul {
+                li {
+                    margin: 0 5px;
+                    a {
+                        font-size: 10px;
+                    }
+                }
+            }
         }
     }
 }
