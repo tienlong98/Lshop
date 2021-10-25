@@ -741,6 +741,44 @@
     .comment .comment_heading .form-control {
         border: 1px solid #a7896a !important;
     }
+    /* checkout */
+    
+    .click-login {
+        margin: 100px 0 30px 0;
+        border: 1px solid #f4e7e0;
+    }
+    
+    .click-login-text {
+        padding: 25px;
+        color: #544e48;
+    }
+    
+    .showlogin {
+        color: #211f1f;
+        font-size: 15px;
+        font-weight: 600;
+        font-style: normal;
+    }
+    
+    .product_head {
+        font-size: 15px;
+        line-height: 24px;
+        font-weight: 600;
+        color: #544e48;
+    }
+    
+    .customorder {
+        color: #544e48;
+    }
+    
+    .table {
+        color: #9a533d;
+    }
+    
+    .place_order {
+        margin: 32px 0 132px 0;
+    }
+    /* footer */
     
     .footer {
         background-image: url(../images/bg-home.png);
