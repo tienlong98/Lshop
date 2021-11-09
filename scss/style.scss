@@ -17,6 +17,14 @@
     }
 }
 
+@mixin img-spleft {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    object-position: center;
+}
+
 @mixin logo {
     font-size: 30px;
     letter-spacing: 3px;
@@ -144,6 +152,26 @@
                 a {
                     color: whitesmoke;
                     padding: 0 15px;
+                }
+                .css-user {
+                    position: relative;
+                    a {
+                        .list-menu-user {
+                            display: none;
+                            position: absolute;
+                            background-color: #fef7f5;
+                            top: 20px;
+                            padding: 10px 15px;
+                            width: 150%;
+                            color: #000000;
+                        }
+                        &:hover {
+                            text-decoration: none;
+                            .list-menu-user {
+                                display: list-item;
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -502,6 +530,19 @@
         .fix-bd-1 {
             border: none;
         }
+        li {
+            list-style: none;
+        }
+        .content-spnb {
+            .img-spnb {
+                @include img-spleft();
+            }
+            .content-body {
+                padding-left: 15px;
+                font-size: 13px;
+                color: #3c3834;
+            }
+        }
     }
 }
 
@@ -583,6 +624,116 @@
     }
 }
 
+.content-sp {
+    .naiyo-sanpham {
+        margin-top: 20px;
+        .danhgia-sp {
+            color: #a7896a;
+        }
+        .detail-giasp {}
+        .sort_description {
+            color: #3c3834;
+        }
+        .hananoimi {
+            .text-imi {
+                span {
+                    font-weight: 600;
+                }
+            }
+        }
+        .add-cart {
+            input {
+                border: 1px solid #f4e7e0;
+                padding: 6px;
+                width: 50px;
+            }
+            .button-addcart {
+                @include button();
+                margin-left: 10px;
+            }
+        }
+    }
+}
+
+.content-cart {
+    .gio-hang {
+        table {
+            border: 1px solid #f4e7e0;
+            border-collapse: separate;
+            thead {
+                tr {
+                    th {
+                        border: none;
+                    }
+                }
+            }
+            tbody {
+                tr {
+                    th {
+                        border-top: 1px solid #f4e7e0;
+                    }
+                    td {
+                        padding-top: 15px;
+                        border-top: 1px solid #f4e7e0;
+                        input {
+                            width: 50px;
+                            height: 38px;
+                            padding: 7px 0;
+                        }
+                        .button-mgg-udcart {
+                            @include button();
+                        }
+                        .magiamgia {
+                            width: 100%;
+                        }
+                    }
+                    .fix-img-cart {
+                        width: 50px;
+                        height: auto;
+                        object-fit: cover;
+                        object-position: center;
+                        border-radius: 50%;
+                    }
+                }
+            }
+        }
+        .show-pc {
+            position: relative;
+            .fix-vitri {
+                position: absolute;
+                right: 15px;
+                top: 20px;
+            }
+        }
+        .show-mb {
+            display: none;
+            tbody {
+                width: 100%;
+                .img-mb {
+                    width: 100px;
+                    height: auto;
+                    object-fit: cover;
+                    object-position: center;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+    .thanh-toan {
+        table {
+            border: 1px solid #f4e7e0;
+            tr {
+                td {
+                    border: 1px solid #f4e7e0;
+                }
+            }
+        }
+        .btn-checkout {
+            @include button();
+        }
+    }
+}
+
 @media screen and (max-width:75em) {
     .follow {
         .title-fl {
@@ -648,6 +799,16 @@
     }
     .list-menu {
         display: none !important;
+    }
+    .content-cart {
+        .gio-hang {
+            .show-pc {
+                display: none;
+            }
+            .show-mb {
+                display: table;
+            }
+        }
     }
 }
 

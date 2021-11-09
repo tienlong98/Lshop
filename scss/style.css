@@ -96,6 +96,28 @@
   padding: 0 15px;
 }
 
+.menu .menu-pc .list-icon ul .css-user {
+  position: relative;
+}
+
+.menu .menu-pc .list-icon ul .css-user a .list-menu-user {
+  display: none;
+  position: absolute;
+  background-color: #fef7f5;
+  top: 20px;
+  padding: 10px 15px;
+  width: 150%;
+  color: #000000;
+}
+
+.menu .menu-pc .list-icon ul .css-user a:hover {
+  text-decoration: none;
+}
+
+.menu .menu-pc .list-icon ul .css-user a:hover .list-menu-user {
+  display: list-item;
+}
+
 .menu .menu-pc .show-hide {
   display: none;
   position: absolute;
@@ -674,6 +696,26 @@
   border: none;
 }
 
+.content-shop ul li {
+  list-style: none;
+}
+
+.content-shop ul .content-spnb .img-spnb {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.content-shop ul .content-spnb .content-body {
+  padding-left: 15px;
+  font-size: 13px;
+  color: #3c3834;
+}
+
 .footer {
   background-image: url(../images/bg-home.png);
   background-position: top center;
@@ -786,6 +828,160 @@
   font-weight: 600;
 }
 
+.content-sp .naiyo-sanpham {
+  margin-top: 20px;
+}
+
+.content-sp .naiyo-sanpham .danhgia-sp {
+  color: #a7896a;
+}
+
+.content-sp .naiyo-sanpham .sort_description {
+  color: #3c3834;
+}
+
+.content-sp .naiyo-sanpham .hananoimi .text-imi span {
+  font-weight: 600;
+}
+
+.content-sp .naiyo-sanpham .add-cart input {
+  border: 1px solid #f4e7e0;
+  padding: 6px;
+  width: 50px;
+}
+
+.content-sp .naiyo-sanpham .add-cart .button-addcart {
+  color: #3c3834;
+  background-color: #ffffff;
+  letter-spacing: 0.12em;
+  padding: 11px 35px;
+  cursor: pointer;
+  border: 1px solid #3c3834;
+  -webkit-box-shadow: 0px 0px 0 1px #ffffff, 3px 3px 0 0 #000000;
+          box-shadow: 0px 0px 0 1px #ffffff, 3px 3px 0 0 #000000;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.content-sp .naiyo-sanpham .add-cart .button-addcart:hover {
+  background-color: #000000;
+  color: white;
+}
+
+.content-cart .gio-hang table {
+  border: 1px solid #f4e7e0;
+  border-collapse: separate;
+}
+
+.content-cart .gio-hang table thead tr th {
+  border: none;
+}
+
+.content-cart .gio-hang table tbody tr th {
+  border-top: 1px solid #f4e7e0;
+}
+
+.content-cart .gio-hang table tbody tr td {
+  padding-top: 15px;
+  border-top: 1px solid #f4e7e0;
+}
+
+.content-cart .gio-hang table tbody tr td input {
+  width: 50px;
+  height: 38px;
+  padding: 7px 0;
+}
+
+.content-cart .gio-hang table tbody tr td .button-mgg-udcart {
+  color: #3c3834;
+  background-color: #ffffff;
+  letter-spacing: 0.12em;
+  padding: 11px 35px;
+  cursor: pointer;
+  border: 1px solid #3c3834;
+  -webkit-box-shadow: 0px 0px 0 1px #ffffff, 3px 3px 0 0 #000000;
+          box-shadow: 0px 0px 0 1px #ffffff, 3px 3px 0 0 #000000;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.content-cart .gio-hang table tbody tr td .button-mgg-udcart:hover {
+  background-color: #000000;
+  color: white;
+}
+
+.content-cart .gio-hang table tbody tr td .magiamgia {
+  width: 100%;
+}
+
+.content-cart .gio-hang table tbody tr .fix-img-cart {
+  width: 50px;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 50%;
+}
+
+.content-cart .gio-hang .show-pc {
+  position: relative;
+}
+
+.content-cart .gio-hang .show-pc .fix-vitri {
+  position: absolute;
+  right: 15px;
+  top: 20px;
+}
+
+.content-cart .gio-hang .show-mb {
+  display: none;
+}
+
+.content-cart .gio-hang .show-mb tbody {
+  width: 100%;
+}
+
+.content-cart .gio-hang .show-mb tbody .img-mb {
+  width: 100px;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 50%;
+}
+
+.content-cart .thanh-toan table {
+  border: 1px solid #f4e7e0;
+}
+
+.content-cart .thanh-toan table tr td {
+  border: 1px solid #f4e7e0;
+}
+
+.content-cart .thanh-toan .btn-checkout {
+  color: #3c3834;
+  background-color: #ffffff;
+  letter-spacing: 0.12em;
+  padding: 11px 35px;
+  cursor: pointer;
+  border: 1px solid #3c3834;
+  -webkit-box-shadow: 0px 0px 0 1px #ffffff, 3px 3px 0 0 #000000;
+          box-shadow: 0px 0px 0 1px #ffffff, 3px 3px 0 0 #000000;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.content-cart .thanh-toan .btn-checkout:hover {
+  background-color: #000000;
+  color: white;
+}
+
 @media screen and (max-width: 75em) {
   .follow .title-fl {
     padding: 0 100px;
@@ -831,6 +1027,12 @@
   }
   .list-menu {
     display: none !important;
+  }
+  .content-cart .gio-hang .show-pc {
+    display: none;
+  }
+  .content-cart .gio-hang .show-mb {
+    display: table;
   }
 }
 
